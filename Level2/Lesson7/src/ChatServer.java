@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 
 public class ChatServer {
 
-    private static final Pattern AUTH_PATTERN = Pattern.compile("^/auth (\\w+) (\\w+)$");
+    private static final Pattern AUTH_PATTERN = Pattern.compile("^/auth (\\w+) (\\w+)$");// изменения в соответсвии с уроком
 
     private AuthService authService = new AuthServiceImpl();
 
@@ -72,7 +72,7 @@ public class ChatServer {
         if (userToClientHandler != null) {
             userToClientHandler.sendMessage(userFrom, msg);
         } else {
-            System.out.printf("User %s not found. Message from %s is lost.%n", userTo, userFrom);
+            System.out.printf("User %s not found. Message from %s is lost.%n", userTo, userFrom);// изменения в соответсвии с уроком
         }
     }
 }

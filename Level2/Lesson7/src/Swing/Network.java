@@ -13,7 +13,7 @@ public class Network implements Closeable {
 
     private static final String AUTH_PATTERN = "/auth %s %s";
     private static final String MESSAGE_SEND_PATTERN = "/w %s %s";
-    private static final Pattern MESSAGE_PATTERN = Pattern.compile("^/w (\\w+) (.+)", Pattern.MULTILINE);
+    private static final Pattern MESSAGE_PATTERN = Pattern.compile("^/w (\\w+) (.+)", Pattern.MULTILINE);// изменения в соответсвии с уроком
 
     private Socket socket;
     private DataOutputStream out;

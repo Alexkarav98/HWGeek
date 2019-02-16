@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 public class ClientHandler {
 
-    private static final Pattern MESSAGE_PATTERN = Pattern.compile("^/w (\\w+) (.+)", Pattern.MULTILINE);
+    private static final Pattern MESSAGE_PATTERN = Pattern.compile("^/w (\\w+) (.+)", Pattern.MULTILINE);// изменения в соответсвии с уроком
     private static final String MESSAGE_SEND_PATTERN = "/w %s %s";
 
     private final Thread handleThread;
@@ -56,7 +56,7 @@ public class ClientHandler {
     }
 
     public void sendMessage(String userTo, String msg) throws IOException {
-        out.writeUTF(String.format(MESSAGE_SEND_PATTERN, userTo, msg));
+        out.writeUTF(String.format(MESSAGE_SEND_PATTERN, userTo, msg)); // изменения в соответсвии с уроком
     }
 }
 
