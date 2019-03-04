@@ -13,7 +13,28 @@ public class Main {
         //Task2
         String[] arrayOfStrings = {"A", "B", "C", "D"};
         asList(arrayOfStrings);
+        // Task 3
+        Box<Apple> appleBox = new Box<>();
+        Box<Orange> orangeBox = new Box<>();
+        Box<Orange> orangeBox1 = new Box<>();
 
+        appleBox.add(new Apple());
+        appleBox.add(new Apple());
+
+
+        orangeBox.add(new Orange());
+        orangeBox.add(new Orange());
+
+        orangeBox1.add(new Orange());
+        orangeBox1.add(new Orange());
+        orangeBox1.add(new Orange());
+
+        System.out.println("Apple box weight is "+appleBox.getWeght());
+        System.out.println("Orange box weight is " +orangeBox.getWeght());
+        System.out.println("Orange box1 weight is "+orangeBox1.getWeght());
+
+        System.out.println("Compare oranges "+orangeBox.compareTo(orangeBox1)); //почему false?
+        System.out.println("Compare oranges and apples "+orangeBox1.compareTo(appleBox));
     }
 
     private static void swap(Object[] arr, int n1, int n2) {
@@ -27,4 +48,5 @@ public class Main {
         ArrayList<T> alt = new ArrayList<>(Arrays.asList(arr));
         System.out.println("Task2 and the result of the conversion : "+alt);
     }
+
 }
