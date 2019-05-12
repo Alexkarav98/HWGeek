@@ -12,7 +12,7 @@ public class Main {
         String []arrayOfStrings = {"A","B","C","D"};
         asList(arrayOfStrings);
         }
-        public static void swap(Object[]arr,int n1,int n2){
+        public static void swap(Object<t>[]arr,int n1,int n2){
             System.out.println("Task1: "+ Arrays.toString(arr));
             Object sw = arr[n1];
             arr[n1]=arr[n2];

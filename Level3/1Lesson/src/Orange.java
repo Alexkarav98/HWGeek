@@ -1,4 +1,4 @@
-public class Orange extends Friut {
+public class Orange extends Fruit {
 
     @Override
     public float getweight() {

@@ -1,3 +1,3 @@
-public abstract class Friut {
+public abstract class Fruit {
     public abstract float getweight();
 }
