@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Box <T extends Friut> {
+public class Box <T extends Fruit> {
 
     //Не стал в main прописывать всё
     private ArrayList<T> box = new ArrayList<>();
